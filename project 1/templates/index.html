@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Restaurant Finder</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 2em; }
+    .container { max-width: 600px; margin: auto; }
+    form { margin-bottom: 2em; }
+    input[type="text"], input[type="file"] { width: 100%; padding: 0.5em; margin: 0.5em 0; }
+    button { padding: 0.5em 1em; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Restaurant Finder</h1>
+
+    <h2>Search by Food Name</h2>
+    <form action="/search" method="post">
+      <input type="text" name="food_item" placeholder="Enter food name" required>
+      <button type="submit">Search</button>
+    </form>
+
+    <h2>Search by Food Image</h2>
+    <form action="/search_image" method="post" enctype="multipart/form-data">
+      <input type="file" name="food_image" accept="image/*" required>
+      <button type="submit">Search</button>
+    </form>
+  </div>
+</body>
+</html>
