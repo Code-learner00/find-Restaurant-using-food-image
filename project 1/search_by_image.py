@@ -2,7 +2,7 @@ import google.generativeai as genai
 import base64
 
 # Replace with your actual Gemini API key
-API_KEY = "AIzaSyBa42s7OVktT90svedOoENZH0uKaxNrkQU"
+API_KEY = ""
 genai.configure(api_key=API_KEY)
 
 def encode_image(image_path):
